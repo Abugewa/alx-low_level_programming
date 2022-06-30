@@ -1,1 +1,1 @@
-script that runs a C file through the preprocessor and save the result into another file.
+introduction to c programming: processing,compilation,assembly and linking
