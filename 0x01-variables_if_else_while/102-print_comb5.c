@@ -29,7 +29,7 @@ int main(void)
 						putchar (' ');
 						putchar (k);
 						putchar (l);
-						if (ij != 5756 || kl != 5757)
+						if (i != 57 || j != 56)
 						{
 							putchar (',');
 							putchar (' ');
