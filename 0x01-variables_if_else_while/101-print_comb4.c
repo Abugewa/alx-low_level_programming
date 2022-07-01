@@ -28,11 +28,11 @@ int main(void)
 						putchar (' ');
 					}
 				}
-				k++
+				k++;
 			}
-			j++
+			j++;
 		}
-		i++
+		i++;
 	}
 	putchar ('\n');
 	return (0);
