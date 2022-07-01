@@ -24,16 +24,16 @@ int main(void)
 					kl = (k * 10) + l;
 					if (ij < kl)
 					{
-						putchar (i);
-						putchar (j);
+					putchar (i);
+					putchar (j);
+					putchar (' ');
+					putchar (k);
+					putchar (l);
+					if (i != 57 || j != 56 || k != 57 || l != 57)
+					{
+						putchar (',');
 						putchar (' ');
-						putchar (k);
-						putchar (l);
-						if (i != 57 || j != 56)
-						{
-							putchar (',');
-							putchar (' ');
-						}
+					}
 					}
 					l++;
 				}
