@@ -18,7 +18,6 @@ for (i = 48; i <= 50; i++)
 			{
 				if (i >= 50 && j >= 52)
 				break;
-								
 					_putchar(i);
 					_putchar(j);
 					_putchar(58);
