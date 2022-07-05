@@ -6,8 +6,9 @@
  */
 void jack_bauer(void)
 {
-int i, j, k, l = 48;
+int i, j, k, l;
 
+i = 48;
 while (i <= 57)
 	{
 	j = 48;
