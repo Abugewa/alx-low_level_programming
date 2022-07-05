@@ -4,16 +4,14 @@
  *
  * Return: Always 0 (Success)
  */
+void print_alphabet(void);
 void print_alphabet_x10(void)
 {
-	int i, j;
+	int j;
 
-	for (j = 0; j < 9; j++)
+	for (j = 0; j < 10; j++)
 	{
-		for (i = 97; i < 123; i++)
-		{
-			_putchar(i);
-		}
+		 print_alphabet();
 	}
 	_putchar('\n');
 }
