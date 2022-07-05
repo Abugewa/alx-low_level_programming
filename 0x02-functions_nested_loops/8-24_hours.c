@@ -20,8 +20,9 @@ while (i <= 50)
 	l = 48;
 	while (l <= 57)
 	{
-		if (i <= 50 && j < 52)
+		if (i >= 50 && j >= 52)
 		{
+			break;
 			_putchar(i);
 			_putchar(j);
 			_putchar(58);
