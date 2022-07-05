@@ -9,7 +9,7 @@ void jack_bauer(void)
 int i, j, k, l;
 
 i = 48;
-while (i <= 57)
+while (i <= 50)
 	{
 	j = 48;
 	while (j <= 57)
@@ -20,7 +20,7 @@ while (i <= 57)
 	l = 48;
 	while (l <= 57)
 	{
-		if (i != 50 || j != 52 || k != 48 || l != 48)
+		if (i != 50 || j != 52)
 		{
 			_putchar(i);
 			_putchar(j);
