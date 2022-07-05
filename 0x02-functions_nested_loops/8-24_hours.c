@@ -20,7 +20,7 @@ while (i <= 57)
 	l = 48;
 	while (l <= 57)
 	{
-		if (i != 50 || j != 51 || k != 53 || l != 57)
+		if (i != 50 || j != 52 || k != 48 || l != 48)
 		{
 			_putchar(i);
 			_putchar(j);
