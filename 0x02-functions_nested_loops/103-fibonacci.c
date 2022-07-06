@@ -12,7 +12,7 @@ int main(void)
 	a = 1;
 	b = 2;
 	nxt = sum = 0;
-	while (nxt <= 40000)
+	while (nxt <= 4000000)
 	{
 		nxt = a + b;
 		a = b;
