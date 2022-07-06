@@ -36,7 +36,7 @@ int main(void)
 			nxt1 = (a1 + b1);
 			nxt = a + b + (nxt1 / 1000000000);
 			printf(", %ld", nxt);
-			printf(", %ld", nxt1 % 1000000000);
+			printf("%ld", nxt1 % 1000000000);
 			a = b;
 			a1 = b1;
 			b = nxt;
