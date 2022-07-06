@@ -10,6 +10,8 @@ int main(void)
 	int i, bool1, bool2;
 	long int a, b, nxt, a1, b1, nxt1;
 
+	a = 1;
+	b = 2;
 	bool1 = bool2 = 1;
 	printf("%ld, %ld", a, b);
 	for (i = 0; i < 96; i++)
