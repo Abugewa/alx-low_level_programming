@@ -14,7 +14,7 @@ int main(void)
 	b = 2;
 	bool1 = bool2 = 1;
 	printf("%ld, %ld", a, b);
-	for (i = 1; i <= 98; i++)
+	for (i = 0; i < 96; i++)
 	{
 		if (bool1)
 		{
@@ -40,7 +40,7 @@ int main(void)
 			a = b;
 			a1 = b1;
 			b = nxt;
-			b1 = (nxt % 1000000000);
+			b1 = (nxt1 % 1000000000);
 		}
 		if (((a + b) < 0) && bool1 == 1)
 			bool1 = 0;
