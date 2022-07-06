@@ -16,7 +16,7 @@ int main(void)
 	printf("%ld, %ld", a, b);
 	for (i = 0; i < 96; i++)
 	{
-       		if (bool1)
+		if (bool1)
 		{
 		nxt = a + b;
 		printf(", %ld", nxt);
@@ -33,19 +33,17 @@ int main(void)
 				b = b / 1000000000;
 				bool2 = 0;
 			}
-			nxt1 = a1 + b1;
+			nxt1 = (a1 + b1);
 			nxt = a + b + (nxt1 / 1000000000);
 			printf(", %ld", nxt);
 			printf(", %ld", nxt1 % 1000000000);
 			a = b;
 			a1 = b1;
 			b = nxt;
-			b1 = nxt % 1000000000;
+			b1 = (nxt % 1000000000);
 		}
 		if (((a + b) < 0) && bool1 == 1)
-		{
 			bool1 = 0;
-		}
 	}
 	printf("\n");
 	return (0);
