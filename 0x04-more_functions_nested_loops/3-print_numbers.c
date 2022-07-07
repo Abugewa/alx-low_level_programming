@@ -4,6 +4,7 @@
  * print_numbers - print numbers 0-9
  *
  * Return: no return value
+ *
  */
 void print_numbers(void)
 {
