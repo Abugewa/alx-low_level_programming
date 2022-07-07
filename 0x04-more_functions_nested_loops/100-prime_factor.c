@@ -9,7 +9,7 @@ int main(void)
 {
 	long int i, num;
 
-	i = 612852475143;
+	num = 612852475143;
 	for (i = 2; i < num; i++)
 	{
 		if (num % i == 0)
