@@ -16,8 +16,10 @@ void print_diagonal(int n)
 			_putchar(32);
 		}
 		_putchar(92);
-		if (i < (n-1))
+		if (i < (n - 1))
+		{
 			_putchar(10);
+		}
 	}
 	_putchar(10);
 }
