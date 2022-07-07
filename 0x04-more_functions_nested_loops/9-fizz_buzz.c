@@ -1,11 +1,9 @@
 #include <stdio.h>
-
 /**
- * main - fizzbuzz
+ * main - fizzbuzz multiples of 3 and 5
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int i;
