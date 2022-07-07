@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * main - fizzbuzz multiples of 3 and 5
  *
