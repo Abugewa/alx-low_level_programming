@@ -17,6 +17,7 @@ void _puts(char *str)
 		if (str[len] == '\0')
 		{
 			_putchar(10);
+			break;
 		}
 		_putchar(str[len]);
 		len++;
