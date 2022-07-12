@@ -20,8 +20,12 @@ void rev_string(char *s)
 	}
 	str = s;
 	for (i = 0; i < (len - 1); i++)
+	{
 		for (j = i + 1; j > 0; j--)
+		{
 			rev = *(str + j);
 			*(str + j) = *(str + (j - 1));
 			*(str + (j - 1)) = rev;
+		}
+	}
 }
