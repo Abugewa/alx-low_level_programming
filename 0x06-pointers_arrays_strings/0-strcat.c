@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - appends src to dest
+ * _strcat - append strings
  * @src: source string
  * @dest: destination
  *
@@ -15,9 +15,7 @@ char *_strcat(char *dest, char *src)
 	len = 0;
 	len2 = 0;
 	while (*(dest + len) != '\0')
-	{
 		len++;
-	}
 	while (len2 >= 0)
 	{
 		*(dest + len) = *(src + len2);
