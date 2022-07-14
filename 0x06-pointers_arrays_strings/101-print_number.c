@@ -28,7 +28,7 @@ void print_number(int n)
 		d /= 10;
 		len *= 10;
 	}
-	for (; len >=1; len /= 10)
+	for (; len >= 1; len /= 10)
 	{
 		_putchar(((m / len) % 10) + 48);
 	}
