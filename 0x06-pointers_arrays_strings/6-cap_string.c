@@ -30,8 +30,9 @@ char *cap_string(char *s)
 					break;
 				}
 			}
-			len++;
 		}
+
+		len++;
 	}
 	return (s);
 }
