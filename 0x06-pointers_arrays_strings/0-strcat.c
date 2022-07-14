@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - appends strings
+ * _strcat - appends string
  * @dest: destination
  * @src: source
  *
@@ -21,7 +21,7 @@ char *_strcat(char *dest, char *src)
 	while (len2 >= 0)
 	{
 		*(dest + len) = *(src + len2);
-		if (*(src + len2 == '\0'))
+		if (*(src + len2) == 0)
 		{
 			break;
 		}
