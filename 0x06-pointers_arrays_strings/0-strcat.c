@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strcat - append strings
  * @dest: destination
