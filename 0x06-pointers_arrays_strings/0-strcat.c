@@ -2,10 +2,10 @@
 
 /**
  * _strcat - append strings
- * @src: source string
  * @dest: destination
+ * @src: source
  *
- * Return: destination
+ * Return: pointer to destination
  */
 
 char *_strcat(char *dest, char *src)
