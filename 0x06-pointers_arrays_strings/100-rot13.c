@@ -16,7 +16,7 @@ char *rot13(char *s)
 	len = 0;
 	while (*(s + len) != '\0')
 	{
-		for(i = 0; i < 52; i++)
+		for (i = 0; i < 52; i++)
 		{
 			if (*(s + len) == alpha[i])
 			{
