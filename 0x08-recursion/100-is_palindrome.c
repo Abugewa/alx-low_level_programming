@@ -1,5 +1,5 @@
 #include "main.h"
-#include "2-strlen_recursion"
+#include "2-strlen_recursion.c"
 
 /**
  * comp - compares characters
