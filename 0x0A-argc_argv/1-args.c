@@ -5,7 +5,7 @@
  * @argc: number of command line arguements
  * @argv:array of command line arguements
  *
- * REturn: 0
+ * Return: 0
  */
 
 int main(int argc, char *argv[] __attribute__((unused)))
