@@ -31,7 +31,7 @@ char **strtow(char *str)
 	char **words;
 	unsigned int i, j, height, c, a;
 
-	if (str == NULL || *str == '\0' )
+	if (str == NULL || *str == '\0')
 		return (NULL);
 	for (c = height = 0; str[c] != '\0'; c++)
 		if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
@@ -46,6 +46,8 @@ char **strtow(char *str)
 	{
 		for (c = a; str[c] != '\0'; c++)
 		{
+			if (str[c] == ' ')
+				a++;
 			if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
 			{
 				words[i] = malloc((c - a + 2) * sizeof(char));
