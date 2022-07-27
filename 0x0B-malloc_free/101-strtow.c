@@ -1,6 +1,23 @@
 #include "main.h"
 #include <stdlib.h>
-#include "4-free_grid.c"
+
+/**
+ * char_free - frees array
+ * @grid: array of char
+ * @height: height
+ * Return: no return
+ */
+
+void char_free(char **grid, unsigned int height)
+{
+	if (grid != NULL && height != 0)
+	{
+		for (; height > 0; height --)
+			free(grid[height]);
+		free(grid[height]);
+		free(grid);
+	}
+}
 
 /**
  * strtow - split string
@@ -14,7 +31,7 @@ char **strtow(char *str)
 	char **words;
 	unsigned int i, j, height, c, a;
 
-	if (str == NULL || str == "")
+	if (str == NULL || *str == '\0' )
 		return (NULL);
 	for (c = height = 0; str[c] != '\0'; c++)
 		if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
@@ -34,7 +51,7 @@ char **strtow(char *str)
 				words[i] = malloc((c - a + 2) * sizeof(char));
 				if (words[i] == NULL)
 				{
-					free_grid(words, i);
+					char_free(words, i);
 					return (NULL);
 				}
 				break;
