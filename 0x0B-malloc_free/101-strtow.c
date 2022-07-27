@@ -18,14 +18,12 @@ void char_free(char **grid, unsigned int height)
 		free(grid);
 	}
 }
-
 /**
  * strtow - split string
  * @str: string
  *
- * Return:null(failure), pointer (success)
+ * Return: null(failure), pointer (success)
  */
-
 char **strtow(char *str)
 {
 	char **words;
