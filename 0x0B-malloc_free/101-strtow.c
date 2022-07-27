@@ -57,8 +57,9 @@ char **strtow(char *str)
 				break;
 			}
 		}
+
 		for (j = 0; a <= c; a++, j++)
-			 words[i][j] = str[a];
+			words[i][j] = str[a];
 		words[i][j] = '\0';
 	}
 	words[i] = NULL;
