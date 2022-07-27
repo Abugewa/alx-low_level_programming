@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <4-free_grid.c>
+#include "4-free_grid.c"
 
 /**
  * strtow - split string
