@@ -19,8 +19,11 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < 6)
-		if (s[0] == ops[i][0])
-			return (ops[i][1].f);
-	i++;
+	while (i < 10)
+	{
+		if (s[0] == ops->op[i])
+			break;
+		i++;
+	}
+	return (ops[i / 2].f);
 }
