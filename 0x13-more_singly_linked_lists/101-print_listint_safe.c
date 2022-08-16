@@ -1,4 +1,5 @@
 #include "lists.h"
+#include "5-free_listint2.c"
 
 /**
  * print_listint_safe - prints a linked list.
