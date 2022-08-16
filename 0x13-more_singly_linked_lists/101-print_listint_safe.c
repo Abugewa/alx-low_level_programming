@@ -1,5 +1,28 @@
 #include "lists.h"
-#include "5-free_listint2.c"
+
+/**
+ * free_listp - frees a linked list
+ * @head: head of a list.
+ *
+ * Return: no return.
+ */
+void free_listp(listp_t **head)
+{
+	listp_t *temp;
+	listp_t *curr;
+
+	if (head != NULL)
+	{
+		curr = *head;
+		while ((temp = curr) != NULL)
+		{
+			curr = curr->next;
+			free(temp);
+		}
+		*head = NULL;
+	}
+}
+
 
 /**
  * print_listint_safe - prints a linked list.
@@ -11,12 +34,12 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t nnodes = 0;
-	listint_t *hptr, *new, *add;
+	listp_t *hptr, *new, *add;
 
 	hptr = NULL;
 	while (head != NULL)
 	{
-		new = malloc(sizeof(listint_t));
+		new = malloc(sizeof(listp_t));
 
 		if (new == NULL)
 			exit(98);
@@ -41,6 +64,6 @@ size_t print_listint_safe(const listint_t *head)
 		head = head->next;
 		nnodes++;
 	}
-	free_listint2(&hptr);
+	free_listp(&hptr);
 	return (nnodes);
 }
